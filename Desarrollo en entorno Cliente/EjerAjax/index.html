@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nueva pregunta</title>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src="./js/Pregunta.js"></script>
+		<script type="text/javascript" src="./js/Examen.js"></script>
+		<script type="text/javascript" src="./js/crearExamen.js"></script>
+		<!-- <link rel="stylesheet" type="text/css" href="./estilos/estilos.css">						 -->		
+	</head>
+	<body>
+		<!-- Contenido principal -->
+		<section id="ppal">
+			<!-- formulario para crear pregunta -->
+			<h2>Nueva pregunta</h2>
+			<form>					
+				<div>
+					<label for="nombreExamen">Nombre del examen</label>
+					<input id="nombreExamen" type="text" name="nombreExamen" value="" placeholder="Nombre del examen" required/>
+					<br />
+					<label for="fechaExamen">Fecha del examen</label>
+					<input id="fechaExamen" type="date" name="fechaExamen" placeholder="dd/mm/aaa" required/>				
+				</div>
+
+				<div>
+					<label for="txtValor">Valor de la pregunta</label>
+					<input id="txtValor" name="txtValor" type="number" min="0" step="0.01" value="1" placeholder="0" required/>
+				</div>
+				<div>
+					<label for="txtEnunciado">Enunciado</label>
+					<textarea id="txtEnunciado" name="txtEnunciado" placeholder="Enunciado de la pregunta" rows="5" cols="80" required></textarea>
+					<br />
+					<label for="txtRespuestaPropuesta">Respuesta propuesta</label>
+					<textarea id="txtRespuestaPropuesta" name="txtRespuestaPropuesta" placeholder="Respuesta propuesta a la pregunta" rows="5" cols="80" required></textarea>
+				</div>				
+				<input id="btnGuardar" type="button" value="Guardar Pregunta"/>
+			</form>			
+		</section>
+	</body>
+</html>
