@@ -1,0 +1,10 @@
+function comprobarEmail(){
+	//Pido e-mail
+	     var email = window.prompt("Introduce un email");
+	//si "test"eo la expresion regular y coincide con la del email....
+	     if(/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(email)){
+		window.alert("La dirección de email " + email + " es correcta.");
+	     }else{
+		window.alert("La dirección de email " + email + " NO ES CORRECTA.");
+	     }	
+}

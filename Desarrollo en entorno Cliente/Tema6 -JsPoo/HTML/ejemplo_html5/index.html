@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Esqueleto HTML5</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Carlos Barahona"/>
+		<meta name="application-name" content="Mi Recetario"/>
+		<meta name="description" content="Recetario tradicional de Carlos Barahona"/>
+		<meta name="generator" content="Sublime Text"/>
+		<meta name="keywords" content="Cocina, Tradicional, Recetas, Española"/>
+
+		<meta name="http-equiv" content="basicoRecetario"/>
+
+		<link rel="stylesheet" type="text/css" href="./estilos/basicoRecetario.css" title="basicoRecetario">
+	
+	</head>
+
+	<body>
+
+		<header>
+		  <h1>Recetas de cocina</h1>
+		  <form action="buscador.php" autocomplete="on">
+		  	<label for="buscador">Buscador de recetas</label>
+		  	<input type="search" id="buscador" autofocus/>
+		  	<input type="submit" value="Buscar"/>
+		  </form>
+		</header>
+
+		<nav>
+			<ul>
+			  <li><a href="#">Recetas favoritas</a></li>
+			  <li><a href="#">Mis cocineros</a></li>
+			  <li><a href="#">Videocasts</a></li>
+			  <li><a href="./html/nuevaReceta.html">Nueva Receta</a></li>
+			</ul>
+		</nav>
+
+		<section>
+			<h2>Recetas Tradicionales</h2>		
+
+			<article>
+				<h2>Huevos fritos con Patatas</h2>
+				<figure>
+					<img src="./imagenes/huevos-fritos.jpg" />
+					<figcaption>Huevos fritos</figcaption><span>Valoración:</span><meter value="9" min="0" max="10">9</meter>
+				</figure>
+				<details>
+					<summary>Descripción</summary>
+					<p>Plato típico español es obligatorio en todo recetario. Para realizar un buen plato es imprescindible una buena materia prima utilizando <mark>huevos de gallinas camperas</mark> y <mark>patatas de temporada</mark>.</p>
+				</details>				
+			</article>
+
+			<article>
+				<h2>Berenjenas al horno</h2>
+				<figure>
+					<img src="./imagenes/berenjenas.jpg" />
+					<figcaption>Berenjenas recién horneadas</figcaption><span>Valoración:</span><meter value="8" min="0" max="10">8</meter>
+				</figure>
+				<details>
+					<summary>Descripción</summary>
+					<p>Receta muy sencilla para hacer al horno. Es necesario una berenjena, salsa de tomate frito <mark>casera</mark> y <mark>jamon ibérico</mark>.</p>
+				</details>				
+			</article>
+
+		</section>
+
+		<footer>
+			<p>&copy; Recetario de cocina - 2014</p>
+		</footer>
+
+	</body>
+</html> 

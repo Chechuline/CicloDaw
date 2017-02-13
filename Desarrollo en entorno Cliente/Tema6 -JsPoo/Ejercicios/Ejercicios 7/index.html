@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio Formulario HTML5</title>
+<!-- Aqui deben de ir los scripts -->
+	
+	<script type="text/javascript" src="./js/clases/Persona.js"></script>
+	<script type="text/javascript" src="./js/clases/Aficion.js"></script>
+	<script type="text/javascript" src="./js/miApp.js"></script>
+
+	<script type="text/javascript" src="./js/clases/figuras.js"></script>
+	<script type="text/javascript" src="./js/clases/Vista.js"></script>
+	<script type="text/javascript" src="./js/figuritasApp.js"></script>
+	
+	<script type="text/javascript" src="./js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/myStyle.css">
+	</head>
+	<body>
+		<section>
+			<header><h1>Ejercicios 7</h1></header>
+			<article>
+				<header><h2>Ejercicio 1</h2></header>
+				<table>
+					<thead>
+						<th>Nombre</th>
+						<th>Apellido 1</th>
+						<th>Apellido 2</th>
+						<th>Aficiones</th>
+						<th>Ultimo Libro</th>
+						<th>Libro favorito</th>
+						<th>Autor favorito</th>
+						<th>diasSky/Año</th>
+						<th>Skies</th>
+						<th>Tabla</th>
+						<th>Fijaciones</th>
+						<th>Botas</th>
+					</thead>
+					<tbody id="cuerpo">
+					</tbody>
+				</table>
+			</article>
+			<article>
+				<header><h2>Ejercicio 2</h2></header>
+				<form>
+					<label>Figuras</label>
+					<select name='figuras'>
+						<option value=0>Circulo</option>
+						<option value=1>Linea</option>
+						<option value=2>Triangulo</option>
+						<option value=3>Cuadraro</option></select><br/>
+
+					<label for="posX">Posicion X</label><input type="number" id='posX' value="0"><br/>
+					<label for="posY">Posicion Y</label><input type="number" id='posY' value="0"><br/>
+					<div id='opcion'>
+						<label for='radio'>Radio</label><input type="number" id='radio' value="0">
+						
+					</div>
+					<input type="button" value='Pintar figura' id='pintarFigura'/>
+				</form>
+				<div id="lienzo">
+
+				</div>
+
+			</article>
+		</section>
+	</body>
+</html>

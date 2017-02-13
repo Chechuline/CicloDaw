@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Nueva receta</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Carlos Barahona"/>
+		<meta name="application-name" content="Mi Recetario"/>
+		<meta name="description" content="Recetario tradicional de Carlos Barahona"/>
+		<meta name="generator" content="Sublime Text"/>
+		<meta name="keywords" content="Cocina, Tradicional, Nueva, Receta, Española"/>
+
+		<meta name="http-equiv" content="basicoRecetario"/>
+
+		<link rel="stylesheet" type="text/css" href="./estilos/basicoRecetario.css" title="basicoRecetario">
+	
+	</head>
+
+	<body>
+
+		<header>
+		  <h1>Nueva Receta</h1>
+		</header>
+
+		<nav>
+			<ul>
+			  <li><a href="../index.html">Recetas favoritas</a></li>
+			  <li><a href="#">Mis cocineros</a></li>
+			  <li><a href="#">Videocasts</a></li>
+			  <li><a href="#">Nueva Receta</a></li>
+			</ul>
+		</nav>
+
+		<section>
+			<h2>Formulario de introducción de una nueva receta.</h2>		
+
+			<form action="nuevaReceta.php" method="post">
+
+				<datalist id="ingredientes">
+				    <option value="Berenjena">
+				    <option value="Huevo campero">
+				    <option value="Tomate frito">
+				    <option value="Jamón ibérico">				    
+				</datalist>
+
+				<fieldset>
+					<legend>Datos de la receta:</legend>
+					<label for="temperatura">Temperatura horno</label>
+					<input type="number" id="temperatura" min="0" max="220" required/> <br />
+
+					<label for="ingrediente1">Ingrediente 1:</label>
+					<input type="list" id="ingrediente1" list="ingredientes"/>
+
+					<label for="ingrediente2">Ingrediente 2:</label>
+					<input type="list" id="ingrediente2" list="ingredientes"/>
+
+					<label for="ingrediente3">Ingrediente 3:</label>
+					<input type="list" id="ingrediente3" list="ingredientes"/> <br />
+
+					<label> Imagenes de la receta</label>
+					<input type="file" multiple/>
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Configura como se va a ver tu receta:</legend>
+					<label for="fechaPub">Fecha de publicación:</label>
+					<input type="date" id="fechaPub" min="2015-01-23"/ required> <br />
+
+					<label for="dificultad">Dificultad de la receta</label>
+					<input type="range" id="dificultad" min="0" max="10" required/> <br />
+
+					<label for="colorbg">Color de fondo de la receta</label>				
+					<input type="color" id="colorbg"/> <br />
+
+					<label for="emailConfirmacion">Introduce el email donde te llegará la confirmación de tu receta</label>
+					<input type="email" id="emailConfirmacion" placeholder="nombre@mail.com"/> <br />			
+
+					<label for="smsConfirmacion">O un teléfono si prefieres recibir un sms</label>
+					<input type="tel" id="smsConfirmacion" placeholder="+34xxxxxxxxx"/> <br />			
+
+					<label for="blogAutor">Si tienes un blog y quieres que tu receta enlace a él:</label>
+					<input type="url" id="blogAutor"/> <br />		
+				</fieldset>
+
+				<input type="submit" value="Subir nueva receta"/>
+
+			</form>
+
+		</section>
+
+		<footer>
+			<p>&copy; Recetario de cocina - 2014</p>
+		</footer>
+
+	</body>
+</html> 

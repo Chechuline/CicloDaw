@@ -1,0 +1,28 @@
+@font-face{
+	font-family: "MiCaligrafia";
+	src: url('../fonts/slkscr.ttf') format('truetype');
+	/*como minimo hasta aqui*/
+	font-weight: normal;
+	font-style: normal;
+
+}
+p{
+/*font-family: "Times new Roman";*/
+font-family: "MiCaligrafia";
+
+}
+em:hover{
+	font-family: "Courier";
+	text-shadow: 10px 10px 1px red;
+}
+section > p:first-child{
+	font-size: 20pt;
+}
+section > p:last-child{
+	font-style: italic;
+}
+
+section > p:nth-child(2){
+	font-size: 25pt;
+	font-variant: small-caps;
+}

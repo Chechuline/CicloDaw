@@ -1,0 +1,107 @@
+@font-face{
+	font-family: "aws";
+	src: url('../fonts/FontAwesome.otf') format('opentype');
+	/*como minimo hasta aqui*/
+	font-weight: normal;
+	font-style: normal;
+
+}
+/*div:last-of-type{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-around;
+}*/
+form{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+h1{
+	display: none;
+}
+h2{
+	font-family: Palatino, 'Palatino Linotype',  'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+}
+
+input:invalid{
+	box-shadow: 0px 0px 1.5px 1px purple;
+}
+input::valid{
+	font-weight: bold;
+}
+input[type='text']{
+	width:100px;
+}
+img{
+	width: 40px;
+	margin-right: 10px;
+}
+label{
+	font-family: helvetica;
+}
+/*input::valid{
+	font-weight: bold;
+}*/
+.container{
+	display: flex;
+	width: 300px;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+/*.container > div{
+	display: flex;
+}*/
+.container:nth-child(2) > div + div{
+	position: relative;
+	width: 300px;
+	align-self: center
+}
+.container > div + div > label{
+	width: 70%;
+	align-self: center;
+}
+.container > div > label + input[type='checkbox']{
+	margin-right: 5px;
+		order: -1;
+}
+.container:nth-child(3) div label{
+	position: relative;
+	width: 70%;
+}
+.entrada{
+	font-family:Palatino, 'Palatino Linotype',  'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+	border: 2px outset grey;
+	/*border-bottom: 2px outset grey;*/
+	border-radius: 5px;
+	margin-bottom: 10px;
+	align-self: center;
+}
+.hidden{
+	display: none !important;
+}
+.navi{
+	flex-flow: row nowrap !important;
+	justify-content: center;
+}
+/*.visible{
+	display: flex;
+}*/
+/*.visible > input[type='text']{
+	align-self: flex-end;
+}*/
+/*Alineacion de labels*/
+/*.visible > label{
+	text-align: center;
+}*/
+/*Para los inpute text queden primero*/
+/*.visible > input[type='checkbox']{
+		order: 1;
+}*/
+.container > div{
+	display: flex;
+}
+.container > div > label + input[type='checkbox']{
+		order: -1;
+}
+
