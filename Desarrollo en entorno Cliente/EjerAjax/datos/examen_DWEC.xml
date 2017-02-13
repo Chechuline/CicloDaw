@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xml>
+	<examen>
+		<nombre>DWEC</nombre>
+		<fecha>04/03/2016</fecha>
+		<preguntas>
+			<pregunta>
+				<enunciado>define callback</enunciado>
+				<valor>1</valor>
+				<respuestaPropuesta>Llamada a una funcion que ha sido pasada como parametro a la funcion desde donde es llamada.</respuestaPropuesta>
+			</pregunta>
+			<pregunta>
+				<enunciado>es JavaScript orientado a objetos?</enunciado>
+				<valor>2</valor>
+				<respuestaPropuesta>No, es basado en objetos.</respuestaPropuesta>
+			</pregunta>
+			<pregunta>
+				<enunciado>es JavaScript orientado a objetos?</enunciado>
+				<valor>2</valor>
+				<respuestaPropuesta>No, es basado en objetos.</respuestaPropuesta>
+			</pregunta>
+			<pregunta>
+				<enunciado>que son los JSON?</enunciado>
+				<valor>3</valor>
+				<respuestaPropuesta>Javascript Object Notation. Ficheros de intercambio de informacion estructurada.</respuestaPropuesta>
+			</pregunta>
+		<pregunta><enunciado>asdfggg</enunciado><valor>1</valor><respuestaPropuesta>asdggghj</respuestaPropuesta></pregunta><pregunta><enunciado>asdfggg23</enunciado><valor>1</valor><respuestaPropuesta>asdggghj23</respuestaPropuesta></pregunta><pregunta><enunciado>prprprprprp</enunciado><valor>1</valor><respuestaPropuesta>prprprprprprp</respuestaPropuesta></pregunta></preguntas>
+	</examen>
+</xml>
